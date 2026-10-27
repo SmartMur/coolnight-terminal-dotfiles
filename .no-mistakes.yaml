@@ -1,0 +1,6 @@
+agent: codex
+commands:
+  test: python3 -m unittest discover -s tests -v
+  lint: bash -n install.sh rollback.sh setup-ai.sh bin/install-core.sh && zsh -n config/shell.zsh config/prompt.zsh
+pr:
+  publish_intent: false
